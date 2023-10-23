@@ -2,7 +2,7 @@
 
 /**
  * swap_nodes - Swap two nodes in doubly-linked list.
- * @header:  head 
+ * @header:  head
  * @node1: first node to swap.
  * @node2: second node to swap.
  */
