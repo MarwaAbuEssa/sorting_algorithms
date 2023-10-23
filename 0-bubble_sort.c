@@ -17,9 +17,8 @@ void swap(int *a, int *b)
 /**
  * bubble_sort - Sort an array of integers in asc.
  * @array: array of integers to sort.
- * @size: size 
- *
- * Description: print rray 
+ * @size: size
+ * Description: print rray
  */
 void bubble_sort(int *array, size_t size)
 {
