@@ -1,12 +1,12 @@
 #include "sort.h"
 
 /**
- * swap_nodes - Swap two nodes in doubly-linked list.
+ * swap_two - Swap two nodes in doubly-linked list.
  * @header:  head
  * @node1: first node to swap.
  * @node2: second node to swap.
  */
-void swap_nodes(listint_t **header, listint_t **node1, listint_t *node2)
+void swap_two(listint_t **header, listint_t **node1, listint_t *node2)
 {
 	(*node1)->next = node2->next;
 	if (node2->next != NULL)
@@ -39,7 +39,7 @@ void insertion_sort_list(listint_t **list)
 		insert = inode->prev;
 		while (insert != NULL && inode->n < insert->n)
 		{
-			swap_nodes(list, &insert, inode);
+			swap_two(list, &insert, inode);
 			print_list((const listint_t *)*list);
 		}
 	}

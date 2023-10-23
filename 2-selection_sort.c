@@ -2,8 +2,8 @@
 
 /**
  * swap - Swap two integers in an array.
- * @a: The first integer to swap.
- * @b: The second integer to swap.
+ * @a: first integer.
+ * @b: second integer.
  */
 void swap(int *a, int *b)
 {
@@ -15,12 +15,10 @@ void swap(int *a, int *b)
 }
 
 /**
- * selection_sort - Sort an array of integers in asc order
- *                  using the selection sort algorithm.
- * @array: An array of integers.
- * @size: The size of the array.
- *
- * Description: Prints the array after each swap.
+ * selection_sort - selection sort algorithm an array of integers in asc
+ * @array: array to order.
+ * @size: size.
+ * Description: Prints array.
  */
 void selection_sort(int *array, size_t size)
 {
