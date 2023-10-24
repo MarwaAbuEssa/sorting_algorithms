@@ -21,7 +21,7 @@ void swap(int *a, int *b)
 }
 
 /**
- * quick_divide - order according to the lomuto partition scheme (last element as pivot).
+ * quick_divide - order according to the lomuto partition using pivot.
  * @array: integers array.
  * @size: array size.
  * @left: start index.
