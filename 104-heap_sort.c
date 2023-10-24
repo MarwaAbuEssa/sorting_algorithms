@@ -1,13 +1,13 @@
 #include "sort.h"
 
 void swap(int *a, int *b);
-void max_heapify(int *array, size_t size, size_t base, size_t root);
+void heap_tree(int *array, size_t size, size_t base, size_t root);
 void heap_sort(int *array, size_t size);
 
 /**
- * swap - Swap two integers in an array.
- * @a: The first integer to swap.
- * @b: The second integer to swap.
+ * swap - Swap two integers.
+ * @a: first.
+ * @b: second.
  */
 void swap(int *a, int *b)
 {
@@ -19,13 +19,13 @@ void swap(int *a, int *b)
 }
 
 /**
- * max_heapify - Turn a binary tree into a complete binary heap.
- * @array: An array of integers representing a binary tree.
- * @size: The size of the array/tree.
- * @base: The index of the base row of the tree.
- * @root: The root node of the binary tree.
+ * heap_tree - a binary tree into a complete binary heap.
+ * @array: array of a binary tree.
+ * @size: size of the tree.
+ * @base: index of the base row of tree.
+ * @root: root node of the binary tree.
  */
-void max_heapify(int *array, size_t size, size_t base, size_t root)
+void heap_tree(int *array, size_t size, size_t base, size_t root)
 {
 	size_t left, right, large;
 
@@ -42,18 +42,15 @@ void max_heapify(int *array, size_t size, size_t base, size_t root)
 	{
 		swap(array + root, array + large);
 		print_array(array, size);
-		max_heapify(array, size, base, large);
+		heap_tree(array, size, base, large);
 	}
 }
 
 /**
- * heap_sort - Sort an array of integers in asc
- *             order using the heap sort algorithm.
- * @array: An array of integers.
- * @size: The size of the array.
- *
- * Description: Implements the sift-down heap sort
- * algorithm. Prints the array after each swap.
+ * heap_sort - heap sort algorithm for int array in asc
+ * @array: integers array.
+ * @size: array size
+ * Description: sift-down heap sort algorithm.
  */
 void heap_sort(int *array, size_t size)
 {
@@ -63,12 +60,12 @@ void heap_sort(int *array, size_t size)
 		return;
 
 	for (i = (size / 2) - 1; i >= 0; i--)
-		max_heapify(array, size, size, i);
+		heap_tree(array, size, size, i);
 
 	for (i = size - 1; i > 0; i--)
 	{
 		swap(array, array + i);
 		print_array(array, size);
-		max_heapify(array, size, i, 0);
+		heap_tree(array, size, i, 0);
 	}
 }
