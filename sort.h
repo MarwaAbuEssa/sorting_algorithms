@@ -21,7 +21,7 @@ typedef enum bool
 /**
  * struct listint_s - Doubly linked list node
  *
- * @n: Integer 
+ * @n: Integer
  * @prev: previous element
  * @next: next element
  */
