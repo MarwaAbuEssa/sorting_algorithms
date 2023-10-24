@@ -23,7 +23,7 @@ void swap(int *a, int *b)
  * @array: array of a binary tree.
  * @size: size of the tree.
  * @base: index of the base row of tree.
- * @root: root node of the binary tree.
+ * @root: root the binary tree.
  */
 void heap_tree(int *array, size_t size, size_t base, size_t root)
 {
