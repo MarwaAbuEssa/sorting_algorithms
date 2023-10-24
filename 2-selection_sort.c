@@ -15,7 +15,7 @@ void swap(int *a, int *b)
 }
 
 /**
- * selection_sort - selection sort algorithm an array of integers in asc
+ * selection_sort - selection sort algorithm for int array  in asc
  * @array: array to order.
  * @size: size.
  * Description: Prints array.
