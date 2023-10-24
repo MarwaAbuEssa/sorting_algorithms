@@ -78,7 +78,7 @@ void bitonic(int *array, size_t size, size_t start, size_t seq, char dir)
  * bitonic_sort - bitonic sort algorithm for array in asc
  * @array: int array.
  * @size: array size.
- * Description: bitonic sort algorithm 
+ * Description: bitonic sort algorithm
  */
 void bitonic_sort(int *array, size_t size)
 {
