@@ -1,12 +1,12 @@
 
-#include "sort.h" 
+#include "sort.h"
 
 /**
- * get_max - Get the maximum value in an array of integers.
- * @array: An array of integers.
- * @size: The size of the array.
+ * get_max - max in in array.
+ * @array: int array.
+ * @size: array size.
  *
- * Return: The maximum integer in the array.
+ * Return: maxi int.
  */
 int get_max(int *array, int size)
 {
@@ -22,12 +22,11 @@ int get_max(int *array, int size)
 }
 
 /**
- * counting_sort - Sort an array of integers in asc order
- *                 using the counting sort algorithm.
- * @array: An array of integers.
- * @size: The size of the array.
+ * counting_sort -  counting sort algorithm for int array asc
+ * @array: int array.
+ * @size: array size.
  *
- * Description: Prints the counting array after setting it up.
+ * Description: counting array.
  */
 void counting_sort(int *array, size_t size)
 {
