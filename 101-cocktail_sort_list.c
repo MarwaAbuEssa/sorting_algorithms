@@ -56,7 +56,7 @@ void swap_behind(listint_t **list, listint_t **tail, listint_t **shaker)
 }
 
 /**
- * cocktail_sort_list - cocktail shaker algorithm fordoubly-linked list. 
+ * cocktail_sort_list - cocktail shaker algorithm fordoubly-linked list.
  * @list: header.
  */
 void cocktail_sort_list(listint_t **list)
