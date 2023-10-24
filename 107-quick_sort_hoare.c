@@ -7,9 +7,9 @@ void hoare_sort(int *array, size_t size, int left, int right);
 void quick_sort_hoare(int *array, size_t size);
 
 /**
- * swap - Swap two integers in an array.
- * @a: The first integer to swap.
- * @b: The second integer to swap.
+ * swap - Swap two.
+ * @a:  first .
+ * @b:  second.
  */
 void swap(int *a, int *b)
 {
@@ -21,17 +21,13 @@ void swap(int *a, int *b)
 }
 
 /**
- * hoare_partition - Order a subset of an array of integers
- *                   according to the hoare partition scheme.
+ * hoare_partition - hoare partition scheme order a subse array.
  * @array: The array of integers.
- * @size: The size of the array.
- * @left: The starting index of the subset to order.
- * @right: The ending index of the subset to order.
- *
- * Return: The final partition index.
- *
- * Description: Uses the last element of the partition as the pivot.
- * Prints the array after each swap of two elements.
+ * @size: array size.
+ * @left: starting index.
+ * @right: ending index.
+ * Return:  partition index.
+ * Description:  swap of two elements by pivot element.
  */
 int hoare_partition(int *array, size_t size, int left, int right)
 {
@@ -58,13 +54,12 @@ int hoare_partition(int *array, size_t size, int left, int right)
 }
 
 /**
- * hoare_sort - Implement the quicksort algorithm through recursion.
- * @array: An array of integers to sort.
- * @size: The size of the array.
- * @left: The starting index of the array partition to order.
- * @right: The ending index of the array partition to order.
- *
- * Description: Uses the Hoare partition scheme.
+ * hoare_sort - quicksort algorithm using recursion.
+ * @array: array of integers.
+ * @size: array size.
+ * @left: starting index
+ * @right: ending index.
+ * Description: Hoare partition scheme.
  */
 void hoare_sort(int *array, size_t size, int left, int right)
 {
@@ -79,13 +74,10 @@ void hoare_sort(int *array, size_t size, int left, int right)
 }
 
 /**
- * quick_sort_hoare - Sort an array of integers in asc
- *                    order using the quicksort algorithm.
- * @array: An array of integers.
- * @size: The size of the array.
- *
- * Description: Uses the Hoare partition scheme. Prints
- * the array after each swap of two elements.
+ * quick_sort_hoare -  quicksort algorithm for array in asc
+ * @array: array.
+ * @size: array size.
+ * Description: Hoare partition scheme.
  */
 void quick_sort_hoare(int *array, size_t size)
 {
